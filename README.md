@@ -23,25 +23,22 @@ The main objective of this project is to analyze the impact of different paramet
 ## Repository Structure
 ```
 project-root/
-|— data/               # Contains all data files used in the project
-|   — raw/            # Raw hyperspectral data as received from sources
-|   — processed/      # Preprocessed datasets ready for analysis
-|— notebooks/          # Jupyter notebooks for development and experimentation
-|   — exploratory/    # Contains notebooks for data exploration and visualization
-|   — optimization/   # Notebooks for performing hyperparameter tuning
-|— src/                # Source code for the project
-|   — models/         # Implementation of machine learning models
-|   — samplers/       # Custom genetic sampler and Optuna integration scripts
-|— results/            # Stores outputs and logs from experiments
-|   — logs/           # Detailed logs of training and optimization processes
-|   — comparisons/    # Performance metrics and visualizations for different samplers
-|— tests/              # Automated tests to ensure code reliability
-|   — unit/           # Unit tests for individual components
-|   — integration/    # Tests for the interaction between different parts of the pipeline
-|— docs/               # Additional documentation and external references
-— README.md            # Project overview (this file)
-— requirements.txt     # Python dependencies
-— LICENSE              # License information
+├── src/                # Core source code for the project
+├── data/               # Contains all datasets and data files utilized in the project
+├── notebook/           # Jupyter notebooks for development, experimentation, and analysis
+├── results/            # Directory for outputs and logs generated from experiments
+│   ├── logs/           # Comprehensive logs for training, optimization, and execution processes
+│   ├── comparisons/    # Performance metrics, analysis reports, and visualizations for different samplers
+├── tests/              # Automated test suite to ensure code quality and reliability
+│   ├── unit/           # Unit tests for verifying individual components
+│   ├── integration/    # Integration tests for validating the interaction between pipeline components
+├── docs/               # Additional project documentation and external references
+├── scripts/            # Auxiliary scripts for setup, utilities, and automation
+├── requirements.txt    # File listing Python dependencies required for the project
+├── Makefile            # Build automation commands and environment setup
+├── README.md           # Project overview, setup instructions, and usage guidelines
+├── LICENSE             # License details for the project
+
 ```
 
 ---
