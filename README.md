@@ -108,7 +108,7 @@ Both scripts:
 2. Make the `setup.sh` script executable and run it:
    ```bash
    chmod +x setup.sh
-   ./setup.sh
+   source setup.sh
    ```
 
 3. Upon successful execution, a completion message will be displayed.
