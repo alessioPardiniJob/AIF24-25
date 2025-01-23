@@ -24,14 +24,13 @@ project-root/
 │   │   ├── wavelenght.csv    # CSV file containing wavelength-related data
 ├── notebook/                 # Directory for Jupyter notebooks used in the project
 │   ├── PardiniAIF24-25.ipynb # Main notebook file for analysis and experimentation
-├── scripts/                  # Directory for scripts related to setup or utilities
+├── scripts/                  # Directory for scripts related to setup
 │   ├── setup.sh              # Shell script for environment setup (Unix-like)
 │   ├── setup.bat             # Batch script for environment setup (Windows)
-├── utils/                    # Utility modules and helper scripts
+├── utils/                    # Utility modules 
 │   ├── __init__.py           # Initialization file for the utils module
 │   ├── utils.py              # Python script containing utility functions
 ├── requirements.txt          # File specifying all Python dependencies needed for the project
-├── Makefile                  # Makefile with build automation commands and environment setup
 ├── README.md                 # Markdown file with project overview, setup instructions, and usage
 ├── LICENSE                   # File containing the license details for the project
 
@@ -121,7 +120,7 @@ Both scripts:
 
 ---
 
-## 4. How to Run the Code/Notebook
+## 4. How to Run the Notebook
 
 After completing the setup, the virtual environment will be active and all dependencies will be installed. You can now proceed with running the notebook.
 
