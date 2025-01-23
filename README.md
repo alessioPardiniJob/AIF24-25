@@ -48,7 +48,7 @@ Below are the recommended steps to execute the project in a **Windows** or **Uni
 
 | Requirement          | Description                                                                                                     |
 |----------------------|-----------------------------------------------------------------------------------------------------------------|
-| **Python 3.0+**     | Ensure that Python 3.0+ is installed on your system.                                                   |
+| **Python 3.9+**     | Ensure that Python 3.9+ is installed on your system.                                                   |
 | **pip**             | Python's package manager, which is required to install project dependencies.                                   |
 
 ---
