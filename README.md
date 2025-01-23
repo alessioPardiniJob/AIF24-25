@@ -23,23 +23,23 @@ The main objective of this project is to analyze the impact of different paramet
 ## Repository Structure
 ```
 project-root/
-├── data/               # Directory that stores all datasets and data files used in the project
-│   ├── test_data/      # Subdirectory containing test data files, such as .npz files
-│   ├── train_data/     # Subdirectory for training data and related files
-│   │   ├── train_data/ # Subdirectory with .npz files for training data
-│   │   ├── train_gt.csv # CSV file with ground truth data for training
-│   │   ├── wavelenght.csv # CSV file containing wavelength-related data
-├── notebook/           # Directory for Jupyter notebooks used in the project
+├── data/                     # Directory that stores all datasets and data files used in the project
+│   ├── test_data/            # Subdirectory containing test data files, such as .npz files
+│   ├── train_data/           # Subdirectory for training data and related files
+│   │   ├── train_data/       # Subdirectory with .npz files for training data
+│   │   ├── train_gt.csv      # CSV file with ground truth data for training
+│   │   ├── wavelenght.csv    # CSV file containing wavelength-related data
+├── notebook/                 # Directory for Jupyter notebooks used in the project
 │   ├── PardiniAIF24-25.ipynb # Main notebook file for analysis and experimentation
-├── scripts/            # Directory for scripts related to setup or utilities
-│   ├── setup.sh        # Shell script for environment setup or installation
-├── utils/              # Utility modules and helper scripts
-│   ├── __init__.py     # Initialization file for the utils module
-│   ├── utils.py        # Python script containing utility functions
-├── requirements.txt    # File specifying all Python dependencies needed for the project
-├── Makefile            # Makefile with build automation commands and environment setup
-├── README.md           # Markdown file with project overview, setup instructions, and usage
-├── LICENSE             # File containing the license details for the project
+├── scripts/                  # Directory for scripts related to setup or utilities
+│   ├── setup.sh              # Shell script for environment setup or installation
+├── utils/                    # Utility modules and helper scripts
+│   ├── __init__.py           # Initialization file for the utils module
+│   ├── utils.py              # Python script containing utility functions
+├── requirements.txt          # File specifying all Python dependencies needed for the project
+├── Makefile                  # Makefile with build automation commands and environment setup
+├── README.md                 # Markdown file with project overview, setup instructions, and usage
+├── LICENSE                   # File containing the license details for the project
 
 
 ```
