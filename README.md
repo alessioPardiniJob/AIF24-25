@@ -3,7 +3,7 @@
 ## Overview
 
 ### Project Title
-**Analyzing Genetic Sampler Configurations and Performance Against TPE and CMA-ES for Optimizing Random Forest Models in Hyperspectral Soil Analysis**
+**Analyzing Genetic Sampler Configurations and Performance Against TPE and RandomSampler for Optimizing Random Forest Models in Hyperspectral Soil Analysis**
 
 ### Course and Academic Context
 This repository hosts the project developed as part of the AIF 24-25 course of the Master's Degree in Computer Science curriculume Artificial Intelligence at the University of Pisa. The work is inspired by a piece of code built for my thesis entitled "The Hyperview Challenge: proposal of a Machine Learning model to improve the state of the art in estimating soil parameters from hyperspectral images" based on the [Hyperview Challenge](#https://platform.ai4eo.eu/seeing-beyond-the-visible-permanent). This project aims to perform efficiency and effectiveness analyses of the Optuna genetic sampler, thus connecting with the topic of the course "Genetic Algorithms"
