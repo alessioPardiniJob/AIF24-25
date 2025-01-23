@@ -13,13 +13,6 @@ The main objective of this project is to analyze the impact of different paramet
 
 ---
 
-## Features
-- **Machine Learning Optimization**: Implements advanced hyperparameter optimization strategies using Optuna.
-- **Open-Source Compatibility**: Fully reliant on open-source tools for maximum accessibility.
-- **Self-Contained Execution**: Designed to be easily downloaded and run without additional setup complexities.
-
----
-
 ## Repository Structure
 ```
 project-root/
@@ -32,7 +25,8 @@ project-root/
 ├── notebook/                 # Directory for Jupyter notebooks used in the project
 │   ├── PardiniAIF24-25.ipynb # Main notebook file for analysis and experimentation
 ├── scripts/                  # Directory for scripts related to setup or utilities
-│   ├── setup.sh              # Shell script for environment setup or installation
+│   ├── setup.sh              # Shell script for environment setup (Unix-like)
+│   ├── setup.bat             # Batch script for environment setup (Windows)
 ├── utils/                    # Utility modules and helper scripts
 │   ├── __init__.py           # Initialization file for the utils module
 │   ├── utils.py              # Python script containing utility functions
@@ -40,7 +34,6 @@ project-root/
 ├── Makefile                  # Makefile with build automation commands and environment setup
 ├── README.md                 # Markdown file with project overview, setup instructions, and usage
 ├── LICENSE                   # File containing the license details for the project
-
 
 ```
 
@@ -59,53 +52,141 @@ project-root/
 
 ---
 
-## Installation
-### Prerequisites
-1. Ensure Python 3.9 is installed (open-source).
-2. Install pip, the Python package manager.
-3. For Windows users: Install and configure Windows Subsystem for Linux (WSL2) to create a Linux-based development environment.
+# How to Execute
 
-### Steps
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-repo/hyperview-challenge.git
-   cd hyperview-challenge
-   ```
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Verify the installation:
-   ```bash
-   python -m unittest discover tests
-   ```
+Below are the recommended steps to execute the project in a **Windows** or **Unix-like** (Linux, macOS) environment. The goal is to set up a virtual environment, install the required dependencies, and run the code/notebook consistently across both operating systems.
 
 ---
 
-## Usage
-### Data Preparation
-1. Place raw hyperspectral data in the `data/raw/` directory.
-2. Run preprocessing scripts to generate processed datasets in `data/processed/`. Use the following command for a self-contained execution:
-   ```bash
-   python src/preprocessing.py --input data/raw/ --output data/processed/
-   ```
-   Ensure all dependencies are installed from `requirements.txt` to streamline the process for easy setup.
-   Example command:
-   ```bash
-   python src/preprocessing.py --input data/raw/ --output data/processed/
-   ```
+## 1. Basic Requirements
 
-### Model Training and Optimization
-1. Navigate to `notebooks/optimization/`.
-2. Run the optimization notebooks to:
-   - Configure and execute the genetic sampler.
-   - Compare its performance with other Optuna samplers.
-3. Results will be saved in the `results/` folder.
-
-### Performance Analysis
-1. Use the notebooks in `results/comparisons/` to visualize and interpret performance metrics.
+| Requirement          | Description                                                                                                     |
+|----------------------|-----------------------------------------------------------------------------------------------------------------|
+| **Python 3.9+**     | Ensure that Python 3.9 or later is installed on your system.                                                   |
+| **pip**             | Python's package manager, which is required to install project dependencies.                                   |
+| *(Optional)* WSL2   | *(Windows only)* You can optionally use [WSL2](https://learn.microsoft.com/windows/wsl/install) for a Linux-like environment. |
 
 ---
+
+## 2. Clone the Repository
+
+Run the following commands to clone the repository and navigate into its directory:
+
+```bash
+git clone https://github.com/your-repo/hyperview-challenge.git
+cd hyperview-challenge
+```
+
+*(Replace the URL with the actual repository link.)*
+
+---
+
+## 3. Configure the Development Environment
+
+Two scripts are provided in the `scripts/` directory to simplify the setup process:
+
+| Script                | Operating System                  |
+|-----------------------|------------------------------------|
+| **setup.bat**         | For Windows systems               |
+| **setup.sh**          | For Unix-like systems (Linux/macOS) |
+
+Both scripts:
+- Check for the presence of Python and pip.
+- Create a virtual environment (in the `env` directory).
+- Activate the virtual environment.
+- Install dependencies from `requirements.txt`.
+
+### 3.1. Windows
+
+1. Navigate to the `scripts` directory:
+   ```bash
+   cd scripts
+   ```
+
+2. Run the `setup.bat` script using Command Prompt, PowerShell, or by double-clicking it:
+   ```bash
+   setup.bat
+   ```
+
+3. Upon successful execution, a completion message will be displayed.
+
+> **Note**: To reactivate the virtual environment in the future:
+> ```bash
+> env\Scripts\activate
+> ```
+
+### 3.2. Unix-like (Linux/macOS)
+
+1. Navigate to the `scripts` directory:
+   ```bash
+   cd scripts
+   ```
+
+2. Make the `setup.sh` script executable and run it:
+   ```bash
+   chmod +x setup.sh
+   ./setup.sh
+   ```
+
+3. Upon successful execution, a completion message will be displayed.
+
+> **Note**: To reactivate the virtual environment in the future:
+> ```bash
+> source env/bin/activate
+> ```
+
+---
+
+## 4. How to Run the Code/Notebook
+
+After completing the setup, the virtual environment will be active and all dependencies will be installed. You can now proceed with running the code or notebooks.
+
+### 4.1. Run the Notebook
+
+If a Jupyter notebook is available, run the following command to start the Jupyter server:
+
+```bash
+jupyter notebook
+```
+
+- In your browser, open the corresponding notebook file (`.ipynb`) and execute the cells.
+
+### 4.2. Run a Python Script
+
+If you need to execute a Python script (e.g., `exp.py`), use the following command:
+
+```bash
+python notebook/exp.py
+```
+
+- The script will handle tasks such as data loading, preprocessing, and optimization, and will save the final results to an output file (e.g., `final_results.txt`).
+
+> **Reminder**: Ensure the virtual environment is activated before running any commands.
+
+---
+
+## 5. Verify the Installation (Optional)
+
+If you have automated tests (e.g., in the `tests/` folder), you can run them to verify that everything is working as expected:
+
+```bash
+python -m unittest discover tests
+```
+
+---
+
+## 6. Troubleshooting Common Issues
+
+| Issue                                | Solution                                                                                         |
+|-------------------------------------|-------------------------------------------------------------------------------------------------|
+| **Modules Not Found**               | Ensure the virtual environment is activated before running commands. Verify `pip install -r requirements.txt`. |
+| **Incorrect File Paths**            | Ensure the `data/` directory (and subfolders) is correctly placed and paths in the code/notebook are accurate. |
+| **Permission Denied (Unix)**        | If `setup.sh` is not executable, run `chmod +x setup.sh` and retry.                             |
+
+---
+
+---
+
 
 ## Contribution Guidelines
 ### Reporting Issues
