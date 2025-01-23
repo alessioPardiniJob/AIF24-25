@@ -1,1 +1,7 @@
-
+numpy
+pandas
+tqdm
+pywt
+psutil
+optuna
+scikit-learn
