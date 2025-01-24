@@ -126,8 +126,6 @@ After completing the setup, the virtual environment will be active and all depen
 
 ### 4.1. Run the Notebook
 
-If a Jupyter notebook is available, run the following command to start the Jupyter server:
-
 ```bash
 jupyter notebook
 ```
