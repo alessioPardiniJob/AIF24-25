@@ -82,21 +82,42 @@ Both scripts:
 ### 3.1. Windows
 
 1. Navigate to the `scripts` directory:
-   ```bash
-   cd scripts
-   ```
+   - **Command Prompt**:
+     ```cmd
+     cd scripts
+     ```
+   - **PowerShell**:
+     ```powershell
+     cd scripts
+     ```
 
-2. Run the `setup.bat` script using Command Prompt, PowerShell, or by double-clicking it:
-   ```bash
-   setup.bat
-   ```
+2. Run the `setup.bat` script using Command Prompt or PowerShell:
+   - **Command Prompt**: Use the `call` command to ensure the virtual environment remains active after execution:
+     ```cmd
+     call setup.bat
+     ```
+   - **PowerShell**: Simply execute the script:
+     ```powershell
+     .\setup.bat
+     ```
 
-3. Upon successful execution, a completion message will be displayed.
+3. Upon successful execution, a completion message will be displayed, and the virtual environment will remain active in the same session.
 
 > **Note**: To reactivate the virtual environment in the future:
-> ```bash
-> env\Scripts\activate
+> - **Command Prompt**:
+>   ```cmd
+>   env\Scripts\activate
+>   ```
+> - **PowerShell**:
+>   ```powershell
+>   .\env\Scripts\Activate.ps1
+>   ```
+
+> **Important for PowerShell users**: If PowerShell blocks script execution, you may need to enable script execution permissions temporarily by running:
+> ```powershell
+> Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 > ```
+
 
 ### 3.2. Unix-like (Linux/macOS)
 
