@@ -37,7 +37,7 @@ project-root/
 ```
 
 ---
-# How to Execute Online
+# How to Execute Online (Recommended)
 
 To run the project online using **Google Colab**, simply click the link below and execute the initial setup cells.
 
