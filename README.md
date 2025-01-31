@@ -16,7 +16,7 @@ In this project, we aim to systematically compare various Optuna samplers—focu
 ## Repository Structure
 ```
 project-root/
-├── data/                     # Directory that stores all datasets and data files used in the project
+├── data/                     # Directory that stores all datasets and data files used in the project (populated during setup.sh execution)
 │   ├── test_data/            # Subdirectory containing test data files, such as .npz files
 │   ├── train_data/           # Subdirectory for training data and related files
 │   │   ├── train_data/       # Subdirectory with .npz files for training data
@@ -26,7 +26,6 @@ project-root/
 │   ├── PardiniAIF24-25.ipynb # Main notebook file for analysis and experimentation
 ├── scripts/                  # Directory for scripts related to setup
 │   ├── setup.sh              # Shell script for environment setup (Unix-like)
-│   ├── setup.bat             # Batch script for environment setup (Windows)
 ├── utils/                    # Utility modules 
 │   ├── __init__.py           # Initialization file for the utils module
 │   ├── utils.py              # Python script containing utility functions
@@ -43,13 +42,13 @@ project-root/
 Below are the recommended steps to execute the project in a **Windows** or **Unix-like** (Linux, macOS) environment. The goal is to set up a virtual environment, install the required dependencies, and run the code/notebook consistently across both operating systems.
 
 ---
-
 ## 1. Basic Requirements
 
 | Requirement          | Description                                                                                                     |
 |----------------------|-----------------------------------------------------------------------------------------------------------------|
 | **Python 3.9+**     | Ensure that Python 3.9+ is installed on your system.                                                   |
 | **pip**             | Python's package manager, which is required to install project dependencies.                                   |
+| **WSL2 (Windows only)** | If using Windows, install and configure WSL2 with a Linux distribution to enable a Unix-like environment. |
 
 ---
 
@@ -66,60 +65,11 @@ cd AIF24-25
 
 ## 3. Configure the Development Environment
 
-Two scripts are provided in the `scripts/` directory to simplify the setup process:
+A setup script is provided in the `scripts/` directory to simplify the environment configuration.
 
-| Script                | Operating System                  |
-|-----------------------|------------------------------------|
-| **setup.bat**         | For Windows systems               |
-| **setup.sh**          | For Unix-like systems (Linux/macOS) |
+### 3.1. Unix-like Systems (Linux/macOS/WSL2)
 
-Both scripts:
-- Check for the presence of Python and pip.
-- Create a virtual environment (in the `env` directory).
-- Activate the virtual environment.
-- Install dependencies from `requirements.txt`.
-
-### 3.1. Windows
-
-1. Navigate to the `scripts` directory:
-   - **Command Prompt**:
-     ```cmd
-     cd scripts
-     ```
-   - **PowerShell**:
-     ```powershell
-     cd scripts
-     ```
-
-2. Run the `setup.bat` script using Command Prompt or PowerShell:
-   - **Command Prompt**: Use the `call` command to ensure the virtual environment remains active after execution:
-     ```cmd
-     call setup.bat
-     ```
-   - **PowerShell**: Simply execute the script:
-     ```powershell
-     .\setup.bat
-     ```
-
-3. Upon successful execution, a completion message will be displayed, and the virtual environment will remain active in the same session.
-
-> **Note**: To reactivate the virtual environment in the future:
-> - **Command Prompt**:
->   ```cmd
->   env\Scripts\activate
->   ```
-> - **PowerShell**:
->   ```powershell
->   .\env\Scripts\Activate.ps1
->   ```
-
-> **Important for PowerShell users**: If PowerShell blocks script execution, you may need to enable script execution permissions temporarily by running:
-> ```powershell
-> Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-> ```
-
-
-### 3.2. Unix-like (Linux/macOS)
+Since Windows users are required to use WSL2 with a Linux distribution, the same setup instructions apply to all Unix-like environments:
 
 1. Navigate to the `scripts` directory:
    ```bash
@@ -138,6 +88,9 @@ Both scripts:
 > ```bash
 > source env/bin/activate
 > ```
+
+Since WSL2 provides a Linux-like environment, running these commands ensures proper dependency installation and development setup, avoiding inconsistencies with native Windows execution.
+
 
 ---
 
