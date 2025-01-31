@@ -106,10 +106,8 @@ jupyter notebook
 
 - In your browser, open the corresponding notebook file (`.ipynb`) and execute the cells.
 
-> **Reminder**: Ensure the virtual environment is activated before running any commands.
-
+> **Reminder**: Ensure the virtual environment is activated before running any commands. It is recommended to position yourself in the notebook folder before running the following command (e.g., cd ../notebook).
 ---
-
 
 ## Contribution Guidelines
 ### Reporting Issues
