@@ -16,7 +16,7 @@ In this project, we aim to systematically compare various Optuna samplers—focu
 ## Repository Structure
 ```
 project-root/
-├── data/                     # Directory that stores all datasets and data files used in the project (populated during setup.sh execution)
+├── data/                     # Directory that stores all datasets and data files used in the project (populated during setup.sh/setupColab.sh execution)
 │   ├── test_data/            # Subdirectory containing test data files, such as .npz files
 │   ├── train_data/           # Subdirectory for training data and related files
 │   │   ├── train_data/       # Subdirectory with .npz files for training data
@@ -26,6 +26,7 @@ project-root/
 │   ├── PardiniAIF24-25.ipynb # Main notebook file for analysis and experimentation
 ├── scripts/                  # Directory for scripts related to setup
 │   ├── setup.sh              # Shell script for environment setup (Unix-like)
+│   ├── setupColab.sh         # Shell script for environment setup (Google Colab)
 ├── utils/                    # Utility modules 
 │   ├── __init__.py           # Initialization file for the utils module
 │   ├── utils.py              # Python script containing utility functions
