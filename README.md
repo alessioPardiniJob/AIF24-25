@@ -41,7 +41,7 @@ project-root/
 
 To run the project online using **Google Colab**, simply click the link below and execute the initial setup cells.
 
-[**Open in Google Colab**](https://colab.research.google.com/github/alessioPardiniJob/AIF24-25/blob/main/notebook/PardiniAIF24-25.ipynb)
+[**Open in Google Colab**]([https://colab.research.google.com/github/alessioPardiniJob/AIF24-25/blob/main/notebook/PardiniAIF24-25.ipynb](https://colab.research.google.com/drive/15P1K15993CfdpR7pPb_Vymt-N2CZZG86?usp=sharing))
 
 ### Steps:
 1. Open the notebook in Colab.
