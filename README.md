@@ -37,8 +37,21 @@ project-root/
 ```
 
 ---
+# How to Execute Online
 
-# How to Execute
+To run the project online using **Google Colab**, simply click the link below and execute the initial setup cells.
+
+[**Open in Google Colab**]([https://colab.research.google.com/](https://colab.research.google.com/github/alessioPardiniJob/AIF24-25/blob/main/notebook/PardiniAIF24-25.ipynb))
+
+### Steps:
+1. Open the notebook in Colab.
+2. Run the initial setup cells to install dependencies and download required data.
+3. Proceed with executing the rest of the notebook.
+
+That's it! 🚀
+
+--
+# How to Execute Locally
 
 Below are the recommended steps to execute the project in a **Windows** or **Unix-like** (Linux, macOS) environment. The goal is to set up a virtual environment, install the required dependencies, and run the code/notebook consistently across both operating systems.
 
