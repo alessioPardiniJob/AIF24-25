@@ -50,7 +50,8 @@ To run the project online using **Google Colab**, simply click the link below an
 
 That's it! 🚀
 
---
+---
+
 # How to Execute Locally
 
 Below are the recommended steps to execute the project in a **Windows** or **Unix-like** (Linux, macOS) environment. The goal is to set up a virtual environment, install the required dependencies, and run the code/notebook consistently across both operating systems.
