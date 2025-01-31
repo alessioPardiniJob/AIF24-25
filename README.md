@@ -56,7 +56,7 @@ That's it! 🚀
 
 Below are the recommended steps to execute the project in a **Windows** or **Unix-like** (Linux, macOS) environment. The goal is to set up a virtual environment, install the required dependencies, and run the code/notebook consistently across both operating systems.
 
----
+
 ## 1. Basic Requirements
 
 | Requirement          | Description                                                                                                     |
@@ -65,7 +65,7 @@ Below are the recommended steps to execute the project in a **Windows** or **Uni
 | **pip**             | Python's package manager, which is required to install project dependencies.                                   |
 | **WSL2 (Windows only)** | If using Windows, install and configure WSL2 with a Linux distribution to enable a Unix-like environment. |
 
----
+
 
 ## 2. Clone the Repository
 
@@ -76,7 +76,7 @@ git clone https://github.com/alessioPardiniJob/AIF24-25
 cd AIF24-25
 ```
 
----
+
 
 ## 3. Configure the Development Environment
 
@@ -107,7 +107,6 @@ Since Windows users are required to use WSL2 with a Linux distribution, the same
 Since WSL2 provides a Linux-like environment, running these commands ensures proper dependency installation and development setup, avoiding inconsistencies with native Windows execution.
 
 
----
 
 ## 4. How to Run the Notebook
 
